@@ -20,6 +20,7 @@ abstract class Element
     protected $value;
     protected $help;
     protected $label;
+    protected $icon;
     protected $placeholder;
     protected $postfix;
     protected $class;
@@ -152,6 +153,30 @@ abstract class Element
     public function getLabel()
     {
         return $this->label;
+    }
+
+    /**
+     * Set icon before label. Will not be shown this icon if a label is not set.
+     * @param string $class. For example 'mdi mdi-information'.
+     * @param array $attributes. For example ['title' => 'display text after mouseover']
+     *
+     * @return $this
+     */
+    public function setIcon($class, array $attributes = array())
+    {
+        $this->icon['class']      = $class;
+        $this->icon['attributes'] = $attributes ? $attributes : null;
+
+        return $this;
+    }
+
+    /**
+     * Icon for label
+     * @return mixed
+     */
+    public function getIcon()
+    {
+        return $this->icon;
     }
 
     public function setHelp($help)

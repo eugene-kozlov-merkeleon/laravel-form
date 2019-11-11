@@ -29,6 +29,7 @@ class File extends Element
             'elementName' => $this->elementName,
             'error'       => $this->error,
             'label'       => $this->label,
+            'icon'        => $this->icon,
             'placeholder' => $this->placeholder,
             'class'       => $this->class,
             'multiple'    => $this->isMultiple,

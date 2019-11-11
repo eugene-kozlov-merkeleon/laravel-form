@@ -32,6 +32,7 @@ class Raw extends Element
     {
         return view('form::' . $this->theme . '.element.raw', [
             'label'   => $this->label,
+            'icon'    => $this->icon,
             'content' => $this->content,
             'class'   => $this->class,
         ]);

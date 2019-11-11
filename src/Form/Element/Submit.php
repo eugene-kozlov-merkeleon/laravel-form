@@ -31,6 +31,7 @@ class Submit extends Element
     {
         return view('form::' . $this->theme . '.element.submit', [
             'label'       => $this->label,
+            'icon'        => $this->icon,
             'name'        => $this->name,
             'elementName' => $this->elementName,
             'class'       => $this->class,

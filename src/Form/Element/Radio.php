@@ -30,6 +30,7 @@ class Radio extends Element
     {
         return view('form::' . $this->theme . '.element.radio', [
             'label'       => $this->label,
+            'icon'        => $this->icon,
             'placeholder' => $this->placeholder,
             'name'        => $this->name,
             'help'        => $this->help,

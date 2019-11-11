@@ -1,5 +1,14 @@
 <div class="form__element form__element_type_range @if($error) form__element_error @endif {{$class}}">
-    <label class="form__label">{{ $label }}</label>
+    <label class="form__label">
+        @if (isset($icon['class']))
+            <i class="{{$icon['class']}}"
+            @if(isset($icon['attributes']))
+                @foreach($icon['attributes'] as $iAttrName => $iAttrValue) {{ $iAttrName }}="{{ $iAttrValue }}" @endforeach
+            @endif>
+            </i>
+        @endif
+        {{ $label }}
+    </label>
     <div class="form__element-container form__element-container_range">
         @spaceless
             <input @foreach($attributes as $attributeName => $attributeValue) {{ $attributeName }}="{{ $attributeValue }}" @endforeach type="text" value="{{ array_get($value, 'from') }}" name="{{ $elementName }}[from]" placeholder="{{trans('frontend.form.range.from')}}">

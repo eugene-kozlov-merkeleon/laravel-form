@@ -115,6 +115,7 @@ class Select extends Element
 
         return view('form::' . $this->theme . '.element.select', [
             'label'             => $this->label,
+            'icon'              => $this->icon,
             'help'              => $this->help,
             'placeholder'       => $this->placeholder,
             'name'              => $this->name,

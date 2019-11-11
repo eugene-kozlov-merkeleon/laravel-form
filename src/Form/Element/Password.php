@@ -20,6 +20,7 @@ class Password extends Element
             'elementName' => $this->elementName,
             'error'       => $this->error,
             'label'       => $this->label,
+            'icon'        => $this->icon,
             'placeholder' => $this->placeholder,
             'postfix'     => $this->postfix,
             'class'       => $this->class,

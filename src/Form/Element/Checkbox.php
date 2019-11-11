@@ -23,6 +23,7 @@ class Checkbox extends Element
             'elementName' => $this->elementName,
             'error'       => $this->error,
             'label'       => $this->label,
+            'icon'        => $this->icon,
             'checked'     => $this->value,
             'options'     => $this->options,
             'class'       => $this->class,

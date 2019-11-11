@@ -14,6 +14,7 @@ class Range extends Element
             'elementName' => $this->elementName,
             'error'       => $this->error,
             'label'       => $this->label,
+            'icon'        => $this->icon,
             'value'       => $this->value,
             'placeholder' => $this->placeholder,
             'postfix'     => $this->postfix,
